@@ -1,2 +1,3 @@
-# Portfolio_
-A responsive portfolio webpage is designed to adapt seamlessly to various screen sizes and devices, ensuring a user-friendly experience across desktops, tablets, and mobile phones. It typically features a clean, visually appealing layout with sections showcasing your work, skills, and experience
+# portfolio website html css
+![image](https://user-images.githubusercontent.com/55645613/206033824-5b4ddc17-8151-494d-9902-76f699796610.png)
+
