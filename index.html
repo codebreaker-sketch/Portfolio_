@@ -1,261 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Wasay — Developer & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <div class="header-wrapper">
-        <h3>🔥 M. Abdul Wasay</h3>
-        <nav>
-          <a href="#contact">
-            <button>Contact me</button>
-          </a>
-        </nav>
-      </div>
-    </header>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
 
-    <!-- HERO -->
-    <div class="hero">
-      <div>
-        <img class="profile-img" src="./assets/me2.png" />
-      </div>
-      <h1>Hey, I'm Abdul Wasay 👋</h1>
-      <p>Developer, Designer, Creator, Digital Marketer</p>
+  <!-- NOISE OVERLAY -->
+  <canvas id="noiseCanvas" class="noise-overlay"></canvas>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">AW<span class="dot">.</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-header">Let's Talk <span>↗</span></a>
     </div>
+  </header>
 
-    <!-- ABOUT -->
-    <div class="about">
-      <div class="about-wrapper">
-        <div class="col">
-          <h2>My Career So Far</h2>
-          <p>
-            I am a passionate developer with experience in C++, database management, mobile computing, and information security,
-            having worked on 4-5 diverse projects. Alongside my technical expertise, I have ample experience in digital 
-            marketing, blending creativity with problem-solving. My skills allow me to build efficient solutions while 
-            understanding the business impact of technology.
-          </p>
-        </div>
-        <div class="skills col">
-          <h2>My Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>Flutter</li>
-            <li>Dart</li>
-            <li>Mongo DB</li>
-            <li>Firebase</li>
-            <li>SQL</li>
-            <li>SQL Express</li>
-            <li>C Sharp</li>
-            <li>Blazor</li>
-            <li>Google Cloud</li>
-            <li>Digital Marketing</li>
-            <li>SEO</li>
-            <li>Google Ads</li>
-            <li>Facebook Ads</li>
-            
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
 
-          </ul>
-        </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for hire
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-text="Abdul">Abdul</span>
+        <span class="line accent-line" data-text="Wasay">Wasay</span>
+      </h1>
+      <p class="hero-sub">Developer · Designer · Creator · Digital Marketer</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work <span class="arrow">→</span></a>
+        <a href="#contact" class="btn-ghost">Say Hello</a>
       </div>
     </div>
 
-    <!-- PROJECTS -->
-    <div class="projects">
-      <div class="project-wrapper">
-        <h2>My Projects</h2>
-        <ul>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/Petroleum_management">
-              <img src="./assets/projects/petrol.png" />
-              <p>Project #1 || 
-                Petroleum Management System
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/brick_breaker">
-              <img src="./assets/projects/brick.png" />
-              <p>Project #2 || 
-                Brick Breaker Game
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/car_services-maintenance">
-              <img src="./assets/projects/car_maintain.png" />
-              <p>Project #3 || 
-                Car Services & Maintenance
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/Web_App_Firewall">
-              <img src="./assets/projects/WAF.png" />
-              <p>Project #4 || 
-                Web Application Firewall
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/Golf_website">
-              <img src="./assets/projects/Golf.png" />
-              <p>Project #5 || 
-                Golf Club Website
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/calculatorapp_flutter">
-              <img src="./assets/projects/calc.png" />
-              <p>Project #6 || 
-                Calculater App (Flutter)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/calculator_python">
-              <img src="./assets/projects/calcpy.png" />
-              <p>Project #7 || 
-                Calculater App (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/url_shortener_python">
-              <img src="./assets/projects/url_short.png" />
-              <p>Project #8 || 
-                URL Shortner (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/musicplayer_python">
-              <img src="./assets/projects/music.png" />
-              <p>Project #9 || 
-                Music PLayer (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/plagiarismchecker">
-              <img src="./assets/projects/plag.png" />
-              <p>Project #10 || 
-                plagiarism Checker (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/Titan_Virtual_assis">
-              <img src="./assets/projects/virtual_assis.png" />
-              <p>Project #11 || 
-                Titan Virtaul Assisstant (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/python_Todo">
-              <img src="./assets/projects/todo_py.png" />
-              <p>Project #12 || 
-                ToDo WebApp (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/python_quiz_webapp">
-              <img src="./assets/projects/quiz_py.png" />
-              <p>Project #13 || 
-                Quiz WebApp (PYTHON)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/flutter-Todo_app">
-              <img src="./assets/projects/todo_flut.png" />
-              <p>Project #14 || 
-                ToDo App (Flutter)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/stopwatch_flutter">
-              <img src="./assets/projects/stop_flut.png" />
-              <p>Project #15 || 
-               StopWatch App (Flutter)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/TicTacToe_flutter">
-              <img src="./assets/projects/tictactoe_flut.png" />
-              <p>Project #16 || 
-               TicTacToe Game (Flutter)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/QRcode_scanner">
-              <img src="./assets/projects/qr_flut.png" />
-              <p>Project #17 || 
-               QR Code Scanner (Flutter)
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/codebreaker-sketch/QR_code-generator-manager">
-              <img src="./assets/projects/qr_gen.PNG" />
-              <p>Project #18 || 
-               QR Code Generator-Manager (Blazor-ADO.NET)
-              </p>
-            </a>
-          </li>
-        </ul>
+    <div class="hero-card-3d" id="heroCard">
+      <div class="card-inner">
+        <div class="card-avatar-ring">
+          <img src="./assets/me2.png" alt="Abdul Wasay" class="card-avatar" onerror="this.style.background='linear-gradient(135deg,#6c63ff,#00d4ff)';this.src=''" />
+        </div>
+        <div class="card-info">
+          <p class="card-name">M. Abdul Wasay</p>
+          <p class="card-role">Full-Stack Developer</p>
+        </div>
+        <div class="card-stats">
+          <div class="stat"><span>18+</span><small>Projects</small></div>
+          <div class="stat"><span>4+</span><small>Years</small></div>
+          <div class="stat"><span>∞</span><small>Ideas</small></div>
+        </div>
+        <div class="card-shine"></div>
       </div>
     </div>
 
-    <!-- SOCIALS -->
-    <!-- <div class="socials" id="contact">
-      <div class="socials-wrapper">
-        <div>
-          <h2>Contact Me</h2>
-          <p>+233 550 202 871</p>
-          <p>langfordquarshie21@gmail.com</p>
-          <p>Accra, Ghana</p>
-        </div>
-        <div class="social-icons">
-          <a href="#"><img src="./assets/github.svg" /></a>
-          <a href="#"><img src="./assets/linkedin.svg" /></a>
-          <a href="#"><img src="./assets/twitter.svg" /></a>
-          <a href="#"><img src="./assets/mail.svg" /></a>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-label">/ About me</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">Crafting digital<br/><em>experiences</em> that matter.</h2>
+        <p>I'm a passionate developer with hands-on experience in C++, mobile computing, database management, and information security. I've shipped 18+ projects across web, mobile, and desktop platforms.</p>
+        <p>Alongside code, I blend creativity with strategy through digital marketing — understanding both the technical and business impact of technology.</p>
+        <div class="about-tags">
+          <span>Problem Solver</span>
+          <span>Clean Code Advocate</span>
+          <span>UI/UX Thinker</span>
+          <span>Growth Marketer</span>
         </div>
       </div>
-    </div> -->
-    <div class="socials" id="contact">
-      <div class="socials-wrapper">
-        <div>
-          <h2>Contact Me</h2>
-          <p>+92 332 8970795</p>
-          <p>wasaysultan007@gmail.com</p>
-          <p>Islamabad, Pakistan</p>
-        </div>
-        <div class="social-icons">
-          <a href="https://github.com/codebreaker-sketch" target="_blank"><img src="./assets/github.svg" /></a>
-          <a href="https://www.linkedin.com/in/abdul-wasay-4a31a6249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./assets/linkedin.svg" /></a>
-          <a href="https://www.instagram.com/wasaysultan007?utm_source=qr&igsh=MTNzbGF2OXAxNWhveA==" target="_blank"><img src="./assets/insta.svg" /></a>
-          <a href="mailto: wasaysultan007@gmail.com"><img src="./assets/mail.svg" /></a>
+      <div class="skills-cloud">
+        <h3>Tech Stack</h3>
+        <div class="skills-grid">
+          <div class="skill-pill tier-1">HTML / CSS</div>
+          <div class="skill-pill tier-1">JavaScript</div>
+          <div class="skill-pill tier-1">Python</div>
+          <div class="skill-pill tier-1">C++</div>
+          <div class="skill-pill tier-2">Flutter / Dart</div>
+          <div class="skill-pill tier-2">C# / Blazor</div>
+          <div class="skill-pill tier-2">Firebase</div>
+          <div class="skill-pill tier-2">MongoDB</div>
+          <div class="skill-pill tier-2">SQL / SQL Express</div>
+          <div class="skill-pill tier-2">Google Cloud</div>
+          <div class="skill-pill tier-3">Digital Marketing</div>
+          <div class="skill-pill tier-3">SEO</div>
+          <div class="skill-pill tier-3">Google Ads</div>
+          <div class="skill-pill tier-3">Facebook Ads</div>
         </div>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-label">/ My work</div>
+    <h2 class="section-title">Selected <em>Projects</em></h2>
+
+    <!-- TABS -->
+    <div class="project-tabs">
+      <button class="tab active" data-tab="all">All</button>
+      <button class="tab" data-tab="intermediate">⭐ Intermediate</button>
+      <button class="tab" data-tab="basic">🔹 Basic</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- INTERMEDIATE PROJECTS -->
+      <div class="project-card" data-category="intermediate" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/petrol.png" alt="Petroleum Management" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1f2e,#2d3748)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/Petroleum_management" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <span class="project-badge intermediate">Intermediate</span>
+          </div>
+          <h3>Petroleum Management System</h3>
+          <p>Full management system for petroleum operations with database integration.</p>
+          <div class="project-tech"><span>C++</span><span>Database</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="intermediate" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/WAF.png" alt="Web App Firewall" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1f2e,#2d3748)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/Web_App_Firewall" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <span class="project-badge intermediate">Intermediate</span>
+          </div>
+          <h3>Web Application Firewall</h3>
+          <p>Security-focused WAF implementation for web application protection.</p>
+          <div class="project-tech"><span>Security</span><span>Networking</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="intermediate" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/car_maintain.png" alt="Car Services" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1f2e,#2d3748)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/car_services-maintenance" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <span class="project-badge intermediate">Intermediate</span>
+          </div>
+          <h3>Car Services & Maintenance</h3>
+          <p>Complete car services and maintenance tracking application.</p>
+          <div class="project-tech"><span>C++</span><span>OOP</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="intermediate" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/qr_gen.PNG" alt="QR Generator" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1f2e,#2d3748)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/QR_code-generator-manager" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <span class="project-badge intermediate">Intermediate</span>
+          </div>
+          <h3>QR Code Generator & Manager</h3>
+          <p>Full-featured QR generator and management platform built with Blazor & ADO.NET.</p>
+          <div class="project-tech"><span>Blazor</span><span>ADO.NET</span><span>C#</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="intermediate" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/virtual_assis.png" alt="Virtual Assistant" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1f2e,#2d3748)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/Titan_Virtual_assis" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">05</span>
+            <span class="project-badge intermediate">Intermediate</span>
+          </div>
+          <h3>Titan Virtual Assistant</h3>
+          <p>AI-powered virtual assistant with voice and command support.</p>
+          <div class="project-tech"><span>Python</span><span>AI/ML</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="intermediate" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/Golf.png" alt="Golf Website" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1f2e,#2d3748)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/Golf_website" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">06</span>
+            <span class="project-badge intermediate">Intermediate</span>
+          </div>
+          <h3>Golf Club Website</h3>
+          <p>Professional website for a golf club with booking and info sections.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+      </div>
+
+      <!-- BASIC PROJECTS -->
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/brick.png" alt="Brick Breaker" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/brick_breaker" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">07</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Brick Breaker Game</h3>
+          <p>Classic brick breaker game with collision physics and score system.</p>
+          <div class="project-tech"><span>C++</span><span>Game Dev</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/calc.png" alt="Calculator Flutter" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/calculatorapp_flutter" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">08</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Calculator App</h3>
+          <p>Clean and functional calculator built with Flutter.</p>
+          <div class="project-tech"><span>Flutter</span><span>Dart</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/calcpy.png" alt="Calculator Python" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/calculator_python" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">09</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Calculator App (Python)</h3>
+          <p>Simple yet elegant calculator application in Python.</p>
+          <div class="project-tech"><span>Python</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/url_short.png" alt="URL Shortener" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/url_shortener_python" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">10</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>URL Shortener</h3>
+          <p>Lightweight URL shortening utility built in Python.</p>
+          <div class="project-tech"><span>Python</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/music.png" alt="Music Player" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/musicplayer_python" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">11</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Music Player</h3>
+          <p>Desktop music player with playback controls in Python.</p>
+          <div class="project-tech"><span>Python</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/plag.png" alt="Plagiarism Checker" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/plagiarismchecker" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">12</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Plagiarism Checker</h3>
+          <p>Text similarity and plagiarism detection tool.</p>
+          <div class="project-tech"><span>Python</span><span>NLP</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/todo_py.png" alt="Todo App" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/python_Todo" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">13</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Todo WebApp (Python)</h3>
+          <p>Task management web app with a clean Python backend.</p>
+          <div class="project-tech"><span>Python</span><span>Web</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/quiz_py.png" alt="Quiz WebApp" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/python_quiz_webapp" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">14</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Quiz WebApp (Python)</h3>
+          <p>Interactive quiz platform with score tracking.</p>
+          <div class="project-tech"><span>Python</span><span>Web</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/todo_flut.png" alt="Todo Flutter" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/flutter-Todo_app" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">15</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>Todo App (Flutter)</h3>
+          <p>Mobile task manager with smooth Flutter animations.</p>
+          <div class="project-tech"><span>Flutter</span><span>Dart</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/stop_flut.png" alt="Stopwatch" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/stopwatch_flutter" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">16</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>StopWatch App (Flutter)</h3>
+          <p>Precision stopwatch with lap timer functionality.</p>
+          <div class="project-tech"><span>Flutter</span><span>Dart</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/tictactoe_flut.png" alt="TicTacToe" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/TicTacToe_flutter" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">17</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>TicTacToe Game (Flutter)</h3>
+          <p>Classic two-player TicTacToe with Flutter.</p>
+          <div class="project-tech"><span>Flutter</span><span>Dart</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="basic" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/projects/qr_flut.png" alt="QR Scanner" onerror="this.parentElement.style.background='linear-gradient(135deg,#0f1a2e,#1a2d40)'" />
+            <div class="project-overlay">
+              <a href="https://github.com/codebreaker-sketch/QRcode_scanner" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-num">18</span>
+            <span class="project-badge basic">Basic</span>
+          </div>
+          <h3>QR Code Scanner (Flutter)</h3>
+          <p>Real-time QR code scanning mobile app.</p>
+          <div class="project-tech"><span>Flutter</span><span>Dart</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label">/ Get in touch</div>
+    <h2 class="section-title">Let's build something<br/><em>remarkable</em> together.</h2>
+    <p class="contact-sub">Open for freelance projects, collaborations, and exciting opportunities.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+92 332 8970795</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:wasaysultan007@gmail.com" class="contact-value">wasaysultan007@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Islamabad, Pakistan <span style="font-style:normal;">&#x1F1F5;&#x1F1F0;</span></span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/codebreaker-sketch" target="_blank" class="social-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+          <span class="social-arrow">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/abdul-wasay-617149308" target="_blank" class="social-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+          <span>LinkedIn</span>
+          <span class="social-arrow">↗</span>
+        </a>
+        <a href="https://www.instagram.com/wasaysultan007" target="_blank" class="social-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.25 5.25 0 0 1 21.5 7.25v8.5A5.25 5.25 0 0 1 16.25 21h-8.5A5.25 5.25 0 0 1 2.5 15.75v-8.5A5.25 5.25 0 0 1 7.75 2Zm0-2A7.25 7.25 0 0 0 .5 7.25v8.5A7.25 7.25 0 0 0 7.75 23h8.5A7.25 7.25 0 0 0 23.5 15.75v-8.5A7.25 7.25 0 0 0 16.25 0h-8.5ZM12 6.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 2A3.5 3.5 0 1 0 12 15a3.5 3.5 0 0 0 0-7Zm6.25-2.75a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/></svg>
+          <span>Instagram</span>
+          <span class="social-arrow">↗</span>
+        </a>
+        <a href="mailto:wasaysultan007@gmail.com" class="social-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+          <span>Email Me</span>
+          <span class="social-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <strong>Abdul Wasay</strong> · 2025</p>
+    <p class="footer-sub">Made with ❤️ in Islamabad</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
